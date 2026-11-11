@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Elektronik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="judul-toko">Toko Elektronik Sederhana</h1>
+    <p class="sub-judul">Pilih produk yang Anda inginkan dan masukkan ke keranjang</p>
+  </header>
+
+  <main class="container">
+    <!-- Bagian Daftar Produk -->
+    <section class="produk-section">
+      <h2>Daftar Produk</h2>
+      <div id="daftar-produk" class="grid-produk"></div>
+    </section>
+
+    <!-- Bagian Keranjang Belanja -->
+    <aside class="keranjang-section">
+      <h2>Keranjang Belanja</h2>
+      <ul id="daftar-keranjang"></ul>
+
+      <div id="info-ringkasan" class="ringkasan-box">
+        Jumlah Item: <strong>0</strong> | Total Harga: <strong>Rp 0</strong>
+      </div>
+
+      <div class="aksi-keranjang">
+        <button id="btn-undo" class="btn btn-warning">Batalkan Terakhir (Pop)</button>
+        <button id="btn-kosongkan" class="btn btn-danger">Kosongkan Keranjang</button>
+        <button id="btn-checkout" class="btn btn-success">Checkout</button>
+      </div>
+
+      <!-- Area Ringkasan Pesanan setelah Checkout -->
+      <div id="hasil-checkout" class="checkout-box"></div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
